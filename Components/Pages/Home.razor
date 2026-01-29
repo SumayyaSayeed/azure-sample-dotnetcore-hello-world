@@ -2,6 +2,203 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="hero">
+    <div class="hero-content">
+        <h1 class="title">🚀 Welcome to Demo dotnet App</h1>
+        <p class="subtitle">
+            Build fast. Deploy smarter. Monitor confidently.
+            A clean, modern UI to make your app look professional from day one.
+        </p>
 
-Welcome to your new app.
+        <div class="hero-actions">
+            <a class="btn primary" href="/counter">Get Started</a>
+            <a class="btn outline" href="/fetchdata">View Sample Data</a>
+        </div>
+
+        <div class="badge-row">
+            <span class="badge">⚡ Fast</span>
+            <span class="badge">🔒 Secure</span>
+            <span class="badge">☁️ Cloud-ready</span>
+            <span class="badge">📊 Observable</span>
+        </div>
+    </div>
+
+    <div class="hero-card">
+        <h3>✨ Highlights</h3>
+        <ul>
+            <li>Modern responsive design</li>
+            <li>Production-friendly layout</li>
+            <li>Easy navigation buttons</li>
+            <li>Clean cards & typography</li>
+        </ul>
+        <div class="small-note">
+            Tip: Customize theme colors and add your logo for branding.
+        </div>
+    </div>
+</div>
+
+<div class="features">
+    <div class="feature-card">
+        <h4>🧩 Modular</h4>
+        <p>
+            Component-based structure that scales with your app.
+        </p>
+    </div>
+
+    <div class="feature-card">
+        <h4>☁️ Cloud Deployment</h4>
+        <p>
+            Perfect for Azure App Service, containers, or Kubernetes.
+        </p>
+    </div>
+
+    <div class="feature-card">
+        <h4>📈 Monitoring</h4>
+        <p>
+            Add logs, metrics, and alerts for full visibility.
+        </p>
+    </div>
+</div>
+
+<style>
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 40px;
+        border-radius: 18px;
+        background: linear-gradient(120deg, #0f172a, #1e3a8a);
+        color: #fff;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .hero-content {
+        flex: 1;
+        min-width: 320px;
+    }
+
+    .title {
+        font-size: 2.6rem;
+        font-weight: 800;
+        margin-bottom: 12px;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        opacity: 0.9;
+        max-width: 650px;
+    }
+
+    .hero-actions {
+        margin-top: 24px;
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 12px 18px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.2s ease-in-out;
+        display: inline-block;
+    }
+
+    .btn.primary {
+        background: #22c55e;
+        color: #0b1220;
+    }
+
+    .btn.primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(34,197,94,0.3);
+    }
+
+    .btn.outline {
+        border: 2px solid rgba(255,255,255,0.4);
+        color: #fff;
+        background: transparent;
+    }
+
+    .btn.outline:hover {
+        border-color: #fff;
+        transform: translateY(-2px);
+    }
+
+    .badge-row {
+        margin-top: 22px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .badge {
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-size: 0.9rem;
+        background: rgba(255,255,255,0.12);
+        border: 1px solid rgba(255,255,255,0.2);
+        backdrop-filter: blur(8px);
+    }
+
+    .hero-card {
+        width: 320px;
+        padding: 22px;
+        border-radius: 16px;
+        background: rgba(255,255,255,0.10);
+        border: 1px solid rgba(255,255,255,0.18);
+        backdrop-filter: blur(14px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    .hero-card h3 {
+        margin-top: 0;
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .hero-card ul {
+        padding-left: 18px;
+        margin: 0;
+        line-height: 1.8;
+    }
+
+    .small-note {
+        margin-top: 12px;
+        font-size: 0.9rem;
+        opacity: 0.85;
+    }
+
+    .features {
+        margin-top: 28px;
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .feature-card {
+        padding: 18px;
+        border-radius: 14px;
+        background: #ffffff;
+        border: 1px solid rgba(0,0,0,0.06);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+        transition: 0.2s ease-in-out;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 30px rgba(0,0,0,0.12);
+    }
+
+    .feature-card h4 {
+        margin: 0 0 8px 0;
+        font-size: 1.05rem;
+    }
+
+    .feature-card p {
+        margin: 0;
+        opacity: 0.8;
+    }
+</style>
